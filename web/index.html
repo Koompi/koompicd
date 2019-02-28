@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>KOOMPI Comming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
   </head>
   <style media="screen">
     @import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,700');
@@ -33,9 +34,9 @@
       text-align: center;
       font-size: 100px;
       position: absolute;
-      left: 35%;
+      left: 33%;
       margin-left: -50px;
-      top: 40%;
+      top: 50%;
       margin-top: -50px;
       font-weight: 800 !important;
     }
@@ -85,7 +86,48 @@
         transform: rotate(360deg)
       }
     }
-    
+
+    @media only screen and (max-width : 1024px) {
+      #clockdiv {
+        position: relative;
+        left: 4% !important;
+        font-size: 100px;
+        top: 40%
+      }
+    } 
+
+    @media only screen and (max-width : 979px) {
+      #clockdiv {
+        position: relative;
+        left: 4% !important;
+        font-size: 60px;
+        top: 60%
+      }
+    } 
+    @media only screen and (max-width : 470px) {
+      #clockdiv {
+        position: relative;
+        left: 4% !important;
+        font-size: 40px;
+        top: 60%
+      }
+      .colorBack img{
+        left:33%;
+      }
+    }
+    @media only screen and (max-width : 360px) {
+      #clockdiv {
+        position: relative;
+        left: 6% !important;
+        font-size: 30px;
+        top: 60%
+      }
+      .colorBack img{
+        left:33%;
+        height: 100px;
+        width: 100px;
+      }
+    }    
   </style>
   <body>
   <div class="colorBack">
