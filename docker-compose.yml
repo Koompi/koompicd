@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "6082:80"
+      - "463:443"
+    volumes:
+      - ./web:/usr/share/nginx/html
+    restart: always
